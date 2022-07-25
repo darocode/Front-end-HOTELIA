@@ -13,6 +13,7 @@ font-family: 'Roboto', sans-serif;
     /****Paleta de Colores****/
     --blue-color:#337AB7;
     --light-blue-color:#48D6ED;
+    --dark-grey-color:#161719;
     --grey-color:#333333;
     --light-grey-color:#B2B3B3;
     --aqua-color:#157A8A;
@@ -43,7 +44,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 .navbar-container{
-    background: var(--grey-color);
+    background: var(--dark-grey-color);
     display: flex;
     justify-content: space-between;
     width: 100%;
