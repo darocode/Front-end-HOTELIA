@@ -28,9 +28,8 @@ font-family: 'Roboto', sans-serif;
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    display:flex;
-}
+
+
 
 .logo{
     display: flex;
@@ -62,6 +61,7 @@ body{
 .navlist ul{
     list-style: none;
     display:flex;
+    padding: 1em;
     
 }
 
@@ -82,31 +82,57 @@ body{
 
 .slider-container{
     width: 100%;
-    max-width: 100%;
+    max-width: 120em;
+    
+
     overflow: hidden;
-    
 }
 
-.slider{
+.slider-container .grande{
+    width: 200%;
+    
+
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
+
+.slider-container .img{
+    width: calc(100%/2);
+    background-color: lime;
+}
+
+.slider-container .slider .puntos{
     width: 100%;
-    height: 100%;
-    margin: auto;
+    padding: 1em;
     
-    align-self: center;
-    
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+    top: 10%;
 }
 
-.slider_section{
-    
+.slider-container .punto{
+    width: 4em;
+    height: 0.9em;
+    background-color: blue;
+    margin: 1em 1em o;
+
 }
 
-
-
-.slider_img{
-    display: block;
-    width: 100%;
-    height: 100%;
+.slider-container ul li{
+    margin: 10px;
 }
 
-
+.slider-container .punto.activo{
+    background-color: orange;
+}
